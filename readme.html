@@ -1,0 +1,45 @@
+<html>
+  <p/>This is the readme for the models associated with the paper:<br/>
+
+  Top-down inputs drive neuronal network rewiring and context-enhanced
+  sensory processing in olfaction, Wayne Adams, James N. Graham,
+  Xuchen Han, Hermann Riecke, PLoS Computational Biology (2018)<p/>
+
+  This code was contributed by Hermann Riecke.<p/>
+  
+  <p>To run the matlab code there needs to be a file fignum.txt in the same directory as the code bulbpiri.m and
+a subdirectory called Saved Research. During the initialization of the code it makes a new subdirectory within
+Saved Research that is labeled with a consecutive number based on the value in fignum.txt and the current date
+and time. All figures are saved there.<br/>
+The different cases corresponding to the various figures are controled with the variables learning case and probe case.
+The correspondence with the key figures is as follows<br/>
+* Fig.3: learning case=8<br/>
+* Fig.5: learning case=6<br/>
+* Fig.6: learning case=13<br/>
+* Fig.7: learning case=7<br/>
+<p/>Note: in the uploaded code there may be slight variations of the parameters for Figs. 3, 5, 7 compared to those used
+in the publication.<br/>
+In the uploaded code the parameter number GC aim final was set to 500 to speed up the computations. To
+reduce the fluctutions in the connectivities that number should be raised to the values given in the publication. The
+temporal evolution is relatively slow. To get a reasonable impression of the resulting connectivities and activities
+one has to run the code for at least 40,000 steps. In the code this corresponds to setting outer param step=400.
+<p/>Brief description of the output figures:<br/>
+* Figure 3 shows the activity of the GC with rectifier (left panel) for the training stimuli. The second and third
+panel shows the contributions to the GC activity from bulbar and cortical input, respectively. Panel 4 shows
+the pattern correlation between the GC activities for the training stimuli.<br/>
+* Figure 5 shows the cortical connectivity Wcc as well as the activity of CC without and with sigmoid.<br/>
+* Figure 16 shows the effective disynaptic inhibition WMMand WMC.<br/>
+* Figure 17 shows the CC and MC activities for the training stimuli.<br/>
+* Figure 18: The top 2 panels show the correlations between stimulus pair 1, 2 and stimulus pair 3, 4 as well as
+the corresponding Fisher discriminants as a function of time. Panel 3 shows the contributions of each MC to
+the Fisher discriminants. Panels 4, 5 show the MC acvtivity without and with rectifier.<br/>
+* Figure 19: like Figure 18, but without cortical input.<br/>
+* Figure 80: Top left and bottom left panels show the MC and CC activities for the probe stimuli shown in the
+top right panel. For each stimulus the activities are shown without context and with contexts 1 and 2. The
+bottom right panel shows the same MC activities but as line plots rather than heat maps.<br/>
+* Figure 81 shows the results corresponding to Figure 80 in the absence of cortical inputs.<br/>
+* Figure 1018 shows the temporal evolution of the Fisher discriminant for random read-out as a function of
+time.<br/>
+* Figure 1019 shows the results corresponding to Figure 1018 in the absence of cortical inputs.
+</p>
+</html>
